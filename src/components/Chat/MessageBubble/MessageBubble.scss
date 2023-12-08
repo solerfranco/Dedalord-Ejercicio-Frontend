@@ -1,0 +1,72 @@
+@import '/src/styles/variables.scss';
+
+.sent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .bubble {
+        background-color: $primary-color;
+
+        &::before {
+            right: 12px;
+            border-bottom-color: $primary-color;
+        }
+    }
+
+    .info {
+        flex-direction: row-reverse;
+    }
+}
+
+.info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    &::before {
+        display: block;
+        border-radius: 50%;
+        content: '';
+        background-color: $success-color;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.received {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .bubble {
+        background-color: $secondary-color;
+
+        &::before {
+            left: 12px;
+            border-bottom-color: $secondary-color;
+        }
+    }
+}
+
+
+
+.bubble {
+    white-space: pre-wrap;
+    margin-top: 4px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    color: $light-color;
+    position: relative;
+}
+
+.tail {
+    margin-top: 12px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        border: 10px solid transparent;
+    }
+}

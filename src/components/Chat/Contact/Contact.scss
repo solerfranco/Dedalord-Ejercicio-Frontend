@@ -1,0 +1,49 @@
+@import '/src/styles/variables.scss';
+
+
+li {
+    width: 300px;
+    padding: 12px;
+    border-bottom: 2px solid $secondary-color;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &:hover {
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.username {
+    font-weight: 600;
+    color: $text-primary-color;
+}
+
+.message {
+    font-weight: 400;
+    color: $text-primary-color;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.selected {
+    background-color: $secondary-color;
+}

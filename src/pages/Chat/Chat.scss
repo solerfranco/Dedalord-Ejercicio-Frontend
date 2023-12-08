@@ -1,0 +1,61 @@
+@import '/src/styles/variables.scss';
+
+.chat {
+    display: flex;
+    background-color: $light-color;
+    border-radius: 12px;
+    height: 90vh;
+    overflow: hidden;
+
+    &__box {
+        border-left: 2px solid $secondary-color;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        flex: 1;
+        width: 600px;
+    }
+
+    &__messages {
+        padding: 12px 24px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
+    &__hidden {
+        display: none !important;
+    }
+
+    &__create-container {
+        padding: 10px;
+
+    }
+
+    &__create {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+
+        Input {
+            width: 220px;
+            height: 20px;
+        }
+    }
+
+    ul {
+        overflow: hidden;
+        scrollbar-width: thin;
+        overflow-y: auto;
+        border-top: 2px solid $secondary-color;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}

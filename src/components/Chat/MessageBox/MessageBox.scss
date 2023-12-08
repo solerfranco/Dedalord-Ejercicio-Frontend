@@ -1,0 +1,10 @@
+@import '/src/styles/variables.scss';
+
+.message-box-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 2px solid $secondary-color;
+    padding: 12px;
+    background-color: $light-color;
+}

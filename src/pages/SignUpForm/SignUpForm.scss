@@ -1,0 +1,24 @@
+@import '/src/styles/variables.scss';
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container {
+    background-color: $light-color;
+    border-radius: 10px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    margin: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    text-align: center;
+}

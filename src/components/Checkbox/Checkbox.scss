@@ -1,0 +1,42 @@
+@import '/src/styles/variables';
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+
+    input[type="checkbox"] {
+        padding: 10px;
+        margin: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 2px solid $secondary-color;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        
+        &:checked::before {
+            content: "";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background-color: $primary-color;
+            border-radius: 2px;
+        }
+
+        &:focus {
+            border-color: $primary-color;
+            box-shadow: none;
+        }
+    }
+
+    label{
+        cursor: pointer;
+        user-select: none;
+        padding-left: 8px;
+        font-weight: 500;
+        color: $text-secondary-color;
+    }
+}

@@ -1,0 +1,21 @@
+@import '/src/styles/variables';
+
+.button {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: $primary-color;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    outline: none;
+    box-shadow: 0px;
+    cursor: pointer;
+
+    border: none;
+    font: inherit;
+
+    &:hover {
+        background-color: $primary-color-hover;
+    }
+}
